@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+:root{
+    --bock-body:#ECE9FD;
+    --text-darck:#A54328;
+    --text-darck-gray:#A54328;
+
+    --font-epilogue:'Epilogue', sans-serif;
+
+    font-size: 62.5%;
+}
+
+body{
+    background: url(./imgs/old-paper-texture-beige-craft-cardboard-vintage-canvas-surface\ 1.png);
+    font-size: 1.6rem;
+    font-family: var(--font-epilogue);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1149px;
+    padding: 53px 54px;
+}
+
+.box-1{
+    display: flex;
+    flex-direction: column;
+    gap: 6.6rem;
+    max-width: 50.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color:var(--text-darck) ;
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    margin: 1.5rem 0;
+    
+}
+
+.box-1 img{
+    max-width: 411px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-1 p {
+    color: var(--text-darck-gray);
+    font-weight: 400;
+    line-height: 3.2rem;
+    margin-bottom: 3.2rem;
+}
+
+.box-2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    list-style-position: inside;
+}
+
+h3{
+    font-size: 20px;
+    color: var(--text-darck);
+}
+
+ul li{
+    color: var(--text-darck);
+    font-size: 19px;
+}
+
+ol{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    list-style-position: inside;
+}
+
+ol li{
+    color: var(--text-darck);
+    font-size: 19px;
+}
+
+button{
+    background-color: var(--text-darck);
+    padding: 16px;
+    border-radius: 8px;
+    width:fit-content;
+    border: none;
+    color: white;
+    margin-top: 24px;
+}
+
+
+@media (min-width: 920px) {
+    body{
+        padding-top: 8rem;
+        height: 100vh;
+    }
+
+    main{
+        flex-direction: row;
+        gap: 11.6rem;
+    }     
+    
+    .box-1{
+        width: 55rem;
+    }
+
+    .box-2{
+        width: 523px;
+    }
+}
